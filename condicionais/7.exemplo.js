@@ -1,11 +1,13 @@
 // Programa para verificar se uma pessoa pode entrar no cinema
 
-const temIngresso = true, estaAcompanhado = false;
+const temIngresso = false;
 const censura = 16;
-const idade = 18;
+const idade = 17;
 
-if (temIngresso && (idade >= censura || estaAcompanhado)) {
-    console.log("Pode assistir o filme!");
-} else {
-    console.log("Não pode assistir o filme!");
+if(temIngresso == false){
+    console.log("Barrado por não ter ingresso!");
+}else if(idade < censura){
+    console.log("Barrado pela idade!")
+}else{
+    console.log("Pode entrar!");
 }
